@@ -48,7 +48,7 @@ function updateTbody() {
 function updateFinalGradeAverage() {
     const finalAverage = calculateAverage();
 
-    document.getElementById('final_average_value').innerHTML = finalAverage;
+    document.getElementById('final_average_value').innerHTML = finalAverage.toFixed(2);
     document.getElementById('final_average_result').innerHTML = finalAverage >= minGrade ? spanApproved : spanDisapproved;
 }
 
